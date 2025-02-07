@@ -17,6 +17,12 @@
 		    <artifactId>bedrock-runtime-maven</artifactId>
 		    <version>5.1.2</version>
 		</dependency>
+
+		<dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>1.4.18</version> <!-- Latest version -->
+    </dependency>
 		
 		<dependency>
 			<groupId>junit</groupId>
@@ -58,6 +64,11 @@
         <target>11</target> <!-- You can set this to 1.8 if using Java 8 -->
       </configuration>
     </plugin>
+	  <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version> <!-- Updated plugin version -->
+        </plugin>
   </plugins>
 </build>
 
